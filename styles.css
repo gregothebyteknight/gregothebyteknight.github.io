@@ -119,8 +119,6 @@ body {
 
 body h1, body h2, body h3 {
   font-family: 'Konnect', sans-serif;
-  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
-  font-variant-ligatures: common-ligatures discretionary-ligatures contextual;
 }
 
 body h1 {font-size:2.5rem; text-align:center;  }
