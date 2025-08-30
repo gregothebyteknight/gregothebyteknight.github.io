@@ -5,13 +5,13 @@ html {
 }
 
 body {
-  width:95%; margin:auto; font-family: 'Outfit', sans-serif;
+  width:95%; margin:auto; font-family: 'Outfit', sans-serif; font-size: 18px;
 }
 
 @font-face {
   font-family: 'Konnect';
-  src: url('./sets/KonnectRegular.woff2') format('woff2'),
-       url('./sets/KonnectRegular.oft') format('opentype');
+  src: url('./fonts/KonnectRegular.woff2') format('woff2'),
+       url('./fonts/KonnectRegular.oft') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -115,16 +115,18 @@ body {
   margin:0; font-size:1rem;
 }
 
-body h2 {font-size:2rem}
 
-body h1, body h2 {
-  text-align:center; 
+
+body h1, body h2, body h3 {
   font-family: 'Konnect', sans-serif;
   font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
   font-variant-ligatures: common-ligatures discretionary-ligatures contextual;
 }
 
-body h1 {font-size:2.5rem}
+body h1 {font-size:2.5rem; text-align:center;  }
+body h2 {font-size:2rem; text-align:center; }
+body h3 {font-size: 1.5rem}
+
 
 .section {
   background-color: #DCCFC0;
@@ -177,6 +179,60 @@ body h1 {font-size:2.5rem}
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/*Custom lists */
+
+ul.custom-list {
+  list-style: none; /* removes default bullets */
+  padding-left: 0;  /* optional, aligns nicely */
+}
+
+ul.custom-list li {
+  position: relative;
+  padding-left: 28px; /* space for icon */
+  line-height: 1.1; /* optional: helps with vertical centering */
+}
+
+ul.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background: url("./icons/bullet_sign.svg") no-repeat center;
+  background-size: contain;
+}
+
+
+
+/* date: subtle badge / less contrast so it doesn't compete */
+.date {
+  display: inline-block;
+  color: var(--muted);
+  font-weight: 600;
+  background: rgba(0,0,0,0.03);
+  padding: 6px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+  text-transform: none; /* or uppercase if you prefer */
+}
+
+.date-flex {
+  display: flex;
+  align-items: center; /* aligns top edges */
+  gap: 1rem;
+}
+
+.date-flex .date {
+  flex-shrink: 0; /* prevent shrinking */
+  text-align: center;
+}
+
+.date-flex .flex-content {
+  flex: 1; /* take all remaining space */
 }
 
 
