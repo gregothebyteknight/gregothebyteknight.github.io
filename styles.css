@@ -62,7 +62,7 @@ transform: translateY(7px);
 .site-nav .nav-list a {
   text-decoration: none;
   font-weight: 600;
-  padding: 8px 12px;       /* make tabs clickable */
+  padding: 8px 12px; 
   border-radius: 8px;
   color: #222;
   transition: background-color .2s ease, color .2s ease;
@@ -220,6 +220,14 @@ ul.custom-list li::before {
 .date-flex .flex-content {
   flex: 1; /* take all remaining space */
 }
+
+:root { --space: 30px; }
+
+/* Prevent collapse; creates the final bottom gap */
+body { padding-bottom: var(--space); }
+
+/* Avoid doubling (margin + padding) at the bottom */
+.footer-wrapper { margin-bottom: 0; }
 
 
 
