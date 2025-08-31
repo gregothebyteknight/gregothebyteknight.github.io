@@ -1,11 +1,29 @@
+:root { 
+  --space: 30px; 
+  --bg-color: #FAF9EE;
+  --card-bg: #DCCFC0;
+  --accent-bg: #A2AF9B;
+  --text-color: #222;
+  --link-color: #0645AD}
+
+@media (prefers-color-scheme: dark) {
+  
+}
+
+
 html {
-  height: 100%; /* ensures full height coverage */
+  height: 100%;
   margin: 0;    /* removes default browser margins */
-  background-color: #FAF9EE; /* pick your color */
+  background-color: var(--bg-color);
 }
 
 body {
-  width:95%; margin:auto; font-family: 'Outfit', sans-serif; font-size: 18px;
+  width:95%; margin:auto; font-family: 'Outfit', sans-serif; 
+  padding-bottom: var(--space); font-size: 18px; color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
 }
 
 @font-face {
@@ -80,7 +98,7 @@ transform: translateY(7px);
 
 
 .nav-wrapper {
-  background-color: #A2AF9B;
+  background-color: var(--accent-bg);
   border-radius: 10px;
   padding: 10px 40px 15px 40px;
   margin: 30px 0px 30px 0px;
@@ -89,7 +107,7 @@ transform: translateY(7px);
 
 .profile-header {
   display:flex; flex-wrap:wrap;
-  background-color: #DCCFC0;
+  background-color: var(--card-bg);
   border-radius: 10px;
   padding: 10px 40px 15px 40px;
   margin: 30px 0px 30px 0px;
@@ -117,8 +135,6 @@ transform: translateY(7px);
 .profile-info p {
   margin:0; font-size:1rem;
 }
-
-
 
 body h1, body h2, body h3 {
   font-family: 'Konnect', sans-serif;
@@ -157,7 +173,7 @@ body h3 {font-size: 1.5rem}
 }
 
 .footer-wrapper {
-  background-color: #A2AF9B;
+  background-color: var(--accent-bg);
   border-radius: 10px;
   padding: 10px 40px 15px 40px;
   margin: 30px 0px 30px 0px;
@@ -165,6 +181,7 @@ body h3 {font-size: 1.5rem}
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 0;
 }
 
 /*Custom lists */
@@ -192,9 +209,8 @@ ul.custom-list li::before {
   background-size: contain;
 }
 
+/* Date block */
 
-
-/* date: subtle badge / less contrast so it doesn't compete */
 .date {
   display: inline-block;
   color: var(--muted);
@@ -203,12 +219,11 @@ ul.custom-list li::before {
   padding: 6px 10px;
   border-radius: 8px;
   white-space: nowrap;
-  text-transform: none; /* or uppercase if you prefer */
 }
 
 .date-flex {
   display: flex;
-  align-items: center; /* aligns top edges */
+  align-items: center;
   gap: 1rem;
 }
 
@@ -220,14 +235,6 @@ ul.custom-list li::before {
 .date-flex .flex-content {
   flex: 1; /* take all remaining space */
 }
-
-:root { --space: 30px; }
-
-/* Prevent collapse; creates the final bottom gap */
-body { padding-bottom: var(--space); }
-
-/* Avoid doubling (margin + padding) at the bottom */
-.footer-wrapper { margin-bottom: 0; }
 
 
 
