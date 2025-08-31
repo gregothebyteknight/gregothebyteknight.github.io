@@ -25,6 +25,11 @@ body {
     align-items: center; /* vertically center image */
   }
 
+.profile-header {
+  display: flex;
+  align-items: center; /* vertical centering of image + text */
+}
+
   .profile-info {
     flex: 1;
     display: flex;
@@ -37,9 +42,8 @@ body {
  .flower-frame img {
     width: 300px; /* увеличено с 100% */
     height: auto;
-    border-radius: 10px;
+transform: translateY(7px);
   }
-
 
 }
 
