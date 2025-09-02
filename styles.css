@@ -4,7 +4,8 @@
   --card-bg: #DCCFC0;
   --accent-bg: #A2AF9B;
   --text-color: #222;
-  --link-color: #0645AD}
+  --link-color: #0645AD;
+  --bullet-link: url("./icons/bullet_sign_dark.svg")}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -13,6 +14,7 @@
     --accent-bg: #697565;
     --text-color: #f5f5f5;
     --link-color: #9ecbff;
+    --bullet-link: url("./icons/bullet_sign_light.svg")
   }
 }
 
@@ -22,6 +24,7 @@
     --accent-bg: #697565;
     --text-color: #f5f5f5;
     --link-color: #9ecbff;
+    --bullet-link: url("./icons/bullet_sign_light.svg")
 }
 
 .light-mode { 
@@ -29,7 +32,8 @@
   --card-bg: #DCCFC0;
   --accent-bg: #A2AF9B;
   --text-color: #222;
-  --link-color: #0645AD
+  --link-color: #0645AD;
+  --bullet-link: url("./icons/bullet_sign_dark.svg")
 }
 
 html {
@@ -112,10 +116,10 @@ transform: translateY(7px);
   list-style: none;
   justify-content: center; /* center links */
   flex-wrap: wrap;
+  transform: translateY(3px);
 }
 
-.nav-list {
-justify-content: center; }
+.nav-list {justify-content: center; }
 
 .site-nav .nav-list a:hover {
   background-color: rgba(0,0,0,0.06);}
@@ -146,7 +150,11 @@ justify-content: center; }
   background-color: rgba(0,0,0,0.1);
 }
 
-
+#theme-toggle img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
 
 .profile-header {
   display:flex; flex-wrap:wrap;
@@ -248,7 +256,7 @@ ul.custom-list li::before {
   transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  background: url("./icons/bullet_sign.svg") no-repeat center;
+  background: var(--bullet-link) no-repeat center;
   background-size: contain;
 }
 
