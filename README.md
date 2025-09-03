@@ -3,15 +3,16 @@
 This is my personal portfolio website, showcasing my work, skills, and interests.
 Built with pure HTML, CSS, and JavaScript, it uses an external backend service (Formspree) to handle email submissions
 
+Link: https://gregothebyteknight.github.io/
 
 ## Project Structure
 
 The project is structured as follows:
 
-- `index.html`: The main page of the website, containing an overview of Grigorii Antonov's profile.
-- `research.html`: A page detailing Grigorii Antonov's research projects.
-- `gallery.html`: A gallery of Grigorii Antonov's photography.
-- `contact.html`: A contact form to get in touch with Grigorii Antonov.
+- `index.html`: The main page of the website, containing an overview of my profile.
+- `research.html`: A page detailing my research projects.
+- `gallery.html`: A gallery of my photography.
+- `contact.html`: A contact form to get in touch with me.
 - `styles.css`: The stylesheet for the website.
 - `scripts.js`: The JavaScript file for the website, which includes a theme-switching functionality.
 - `images/`: A directory containing the images used in the website.
@@ -22,10 +23,10 @@ The project is structured as follows:
 
 The website has the following features:
 
-- **About Me Page**: An overview of Grigorii Antonov's profile, including his objective, research, skills, publications, honors, education, and languages.
-- **Research Page**: Detailed descriptions of Grigorii Antonov's research projects.
-- **Gallery Page**: A gallery of Grigorii Antonov's photography, categorized by camera type.
-- **Contact Page**: A contact form to get in touch with Grigorii Antonov.
+- **About Me Page**: An overview of my profile, including an objective, research, skills, publications, honors, education, and languages.
+- **Research Page**: Detailed descriptions of my research projects.
+- **Gallery Page**: A gallery of my photography, categorized by camera type.
+- **Contact Page**: A contact form to get in touch with me.
 - **Theme Switching**: The website supports both light and dark themes, and the theme can be switched using a button in the navigation bar.
 
 ## How to Use
