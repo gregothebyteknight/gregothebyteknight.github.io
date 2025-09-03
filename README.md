@@ -1,6 +1,8 @@
 # Personal Portfolio Website
 
-This is a personal portfolio website for Grigorii Antonov, a molecular biologist and bioinformatician. It showcases his work, skills, and interests.
+This is my personal portfolio website, showcasing my work, skills, and interests.
+Built with pure HTML, CSS, and JavaScript, it uses an external backend service (Formspree) to handle email submissions
+
 
 ## Project Structure
 
