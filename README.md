@@ -10,7 +10,7 @@ Link: https://gregothebyteknight.github.io/
 The project is structured as follows:
 
 - `index.html`: The main page of the website, containing an overview of my profile.
-- `research.html`: A page detailing my research projects.
+- `resume.html`: A resume page containing my education, skills, and research projects.
 - `gallery.html`: A gallery of my photography.
 - `contact.html`: A contact form to get in touch with me.
 - `styles.css`: The stylesheet for the website.
@@ -23,8 +23,8 @@ The project is structured as follows:
 
 The website has the following features:
 
-- **About Me Page**: An overview of my profile, including an objective, research, skills, publications, honors, education, and languages.
-- **Research Page**: Detailed descriptions of my research projects.
+- **About Me Page**: An overview of my profile and interests.
+- **Resume Page**: A detailed resume including my skills, education, and research experience.
 - **Gallery Page**: A gallery of my photography, categorized by camera type.
 - **Contact Page**: A contact form to get in touch with me.
 - **Theme Switching**: The website supports both light and dark themes, and the theme can be switched using a button in the navigation bar.
